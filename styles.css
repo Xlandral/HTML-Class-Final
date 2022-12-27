@@ -1,0 +1,245 @@
+html {
+    font-size: 16px;
+ }
+ a, article, body, div, fieldset, figcaption, figure, footer, form, header, h1, 
+ h2, h3, img, input, label, legend, li, nav, p, p2, p3, p4, section, textarea, ul {
+    border: 0;
+    padding: 0;
+    margin: 0;
+ }
+ img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    padding-top: 1em;
+ }
+ article figure.example {
+    margin-top: 2em;
+ }
+ article figcaption {
+    text-align: center;
+ }
+ 
+ /* body */
+ body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/istockphoto-959385524-170667a.jpg");
+ }
+ p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: white;
+ }
+p2 {
+   font-size: 1.1em;
+   line-height: 1.6em;
+   color: white;
+}
+p3 {
+   font-size: 1.1em;
+   line-height: 1.6em;
+   color: white;
+   text-align: center;
+}
+p4 {
+   font-size: 1.1em;
+   line-height: 1.6em;
+   color: white;
+   text-align: center;
+}
+ a:link {
+    color: white;
+ }
+ a:visited {
+    color: white;
+ }
+ 
+ /* skip navigation link */
+ p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+ }
+ p.skipnavigation a:focus {
+    color: ivory;
+    background-color: purple;
+    top: 0.4em;
+    left: auto;
+    right: 0.4em;
+ }
+ 
+ /* header section */
+ h1 {
+    text-align: center;
+    font-family: Bitter, "Times New Roman", Times, serif;
+    font-weight: 700;
+    color: ivory;
+    background-color: purple;
+    font-size: 2.4em;
+ }
+ 
+ /* site navigation bar */
+ nav.sitenavigation {
+    color: white;
+    text-align: center;
+    background-color: black;
+ }
+ nav.sitenavigation p {
+    margin: 0.3em 0.5em;
+    display: inline-block;
+ }
+ nav.sitenavigation a:link {
+    text-decoration: none;
+    color: #34180f;
+ }
+ nav.sitenavigation a:visited {
+    color: white;
+ }
+ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: ivory;
+ }
+ 
+ /* main content */
+ article {
+    margin: 0 auto;
+    padding: 1.4em;
+    background: #7eccec;
+    background: url("images/lake.jpg");
+ }
+ article div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 3% 1em;
+    background-color: black;
+    overflow: auto;
+    
+ }
+ h2 {
+    padding: 0.4em 0.4em 0;
+    text-align: center;
+    font-family:  "Times New Roman", Times, serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    padding-top: 1em;
+ }
+ h3 {
+    margin-top: 1.4em;
+    font-size: 1.6em;
+    padding-bottom: 1em;
+    font-family:  "Times New Roman", Times, serif;
+    font-weight: 700;
+    clear: both;
+    text-align: center;
+    color: white;
+    border: gray;
+    padding-top: 1em;
+ }
+ article p {
+    text-align: center;
+ }
+
+ article p.pullquote {
+    font-size: 1.7em;
+ }
+ article figure {
+    max-width: 100%;
+    margin-left: 2em;
+    float: right;
+ }
+ footer {
+     background-color: purple;
+     text-align: center;
+     color: white;
+     font: "Times New Roman", Times, serif;
+     font-size: 1.3em;
+ }
+ input, textarea {
+   border: 1px solid #ccc;
+   padding: 0.2em;
+   font-size: 1em;
+   display: block;
+}
+.contactinfo input, .additionalinfo input {
+   width: 25em;
+   margin-bottom: 0.6em;
+}
+textarea {
+   width: 25em;
+   height: auto;
+}
+#submit {
+   border: none;
+   padding: 0.4em 0.6em;
+   margin: 0 auto;
+   background-color: white;
+   font-size: 1.25em;
+   border-radius: 10px;
+   color: black;
+}
+
+/* form styles */
+form {
+   max-width: 400px;
+   padding: 10px;
+   margin: 0 auto;
+}
+.form-instructions {
+   color: red;
+   text-align: center;
+}
+
+/* label styles */
+label {
+   margin: 0.8em 0;
+   font-size: 1em;
+   line-height: 1.6em;
+   font-weight: bold;
+   color: black;
+}
+
+/* feedback preview section */
+.feedback-preview {
+   max-width: 400px;
+   margin: 0 auto;
+   border: 2px solid black;
+   font-size: 1.3em;
+   background-color: white;
+   display: none;
+}
+.submitbutton {
+   display: none;
+}
+.show {
+   display: block;
+}
+.feedback-preview p {
+   margin-bottom: 0.3em;
+}
+.table-row {
+   display: table-row;
+}
+.table-row div:first-child {
+   font-weight: bold;
+}
+.table-cell {
+   display: table-cell;
+}
+
+ 
+ /* print styles */
+ @media print {
+    body, h1, article {
+       color: rgb(0,0,0);
+       background: rgb(255,255,255);
+    }
+    body {
+       max-width: 100%;
+    }
+    nav {
+       display: none;
+    }
+ }
+ @page {
+    margin: 0.75in;
+ }
